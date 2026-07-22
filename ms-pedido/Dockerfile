@@ -2,8 +2,8 @@ FROM eclipse-temurin:21-jre
 
 WORKDIR /app
 
-COPY ms-descubridor/target/*.jar app.jar
+COPY ms-pedido/target/*.jar app.jar
 
-EXPOSE 8761
+EXPOSE 8084
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
